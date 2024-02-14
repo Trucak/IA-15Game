@@ -28,7 +28,7 @@
 
 **A concrete example of execution would be:**
 
-    ```bash
+    
     javac FifteenGame.java
     java FifteenGame A*-Manhattan < TestBoard.txt
-    ```
+    

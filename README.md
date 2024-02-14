@@ -1,27 +1,34 @@
-# IA-15Game
+## IA-15Game
 
-To run, execute:
+**To run, follow these steps:**
 
-  javac FifteenGame.java
+1. Compile the Java code:
 
-Then execute:
+    ```bash
+    javac FifteenGame.java
+    ```
+
+2. Then, execute the program specifying the desired strategy. Use a text file to provide the input board.
+
     ```bash
     java FifteenGame "Strategy" < "TestBoard.txt"
-    ``` 
-Where "Strategy" corresponds to the desired strategy to use from the following options (presented without parentheses):
+    ```
 
-  - BFS ;
-  - DFS ;
-  - IDFS ;
-  - Greedy-Manhattan ;
-  - Greedy-misplaced ;
-  - A*-Manhattan ;  
-  - A*-misplaced ;
-  
- To introduce different board options, simply modify the TestBoard.txt file or use your own file, ensuring that the initial board is entered first and the final board is entered second. It's also possible to introduce options later in the terminal if you only run the command as (java FifteenGame "Strategy").
- 
- A concrete example of execution would be:
+    Replace `"Strategy"` with the desired strategy from the following options:
+
+    - BFS
+    - DFS
+    - IDFS
+    - Greedy-Manhattan
+    - Greedy-misplaced
+    - A*-Manhattan
+    - A*-misplaced
+
+    You can modify the `TestBoard.txt` file with different input boards. Ensure that the initial board is entered first and the final board is entered second. It's also possible to input the options directly in the terminal if you only run the command like `java FifteenGame "Strategy"`.
+
+**A concrete example of execution would be:**
+
     ```bash
-    javac FifteenGame.java 
+    javac FifteenGame.java
     java FifteenGame A*-Manhattan < TestBoard.txt
     ```
